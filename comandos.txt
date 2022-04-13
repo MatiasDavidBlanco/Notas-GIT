@@ -1,0 +1,22 @@
+Estados principales de los archivos de un proyecto en GIT
+
+1-Working Directory (modified)
+2-Staging Area (staged)
+3-Local Repository (committed)
+
+Comandos principales
+
+clear (borra terminal)
+cd “nombre de la carpeta” (acceder a la carpeta del proyecto)
+ls (lista los archivos de una carpeta)
+git init (inicializa un repositorio de git)
+git add archivo.txt (pone el archivo en staged)
+git add --all (pone todos  los  archivos en estado staged)
+git status (muestra el estado de los archivos)
+git commit (confirma archivos de staged a repositorio local)
+git commit -m “comentario” (comitea el archivo con un comentario explicativo)
+git log (muestra el historial de cambios con sus comentarios)
+git remote add origin  https…..(agregar archivos al repositorio remoto en github)
+git remote -v (comprueba configuración de repositorio remoto)
+git push origin master (envía archivos comiteaddos  localmente a repositorio remoto)
+git pull origin master (trae cambios realizados por otra persona desde repositorio reemoto a  mi reposcioriolocal)
