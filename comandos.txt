@@ -6,13 +6,18 @@ Estados principales de los archivos de un proyecto en GIT
 
 Comandos principales
 
+pwd saber en qué carpeta estoy 
+mkdir mi web ( crear nueva carpeta) 
+code . ( Abre visual estudio code para empezar a trabajar dentro de carpeta. Antes es necesario configurar vscode como editor de código) 
 clear (borra terminal)
 cd “nombre de la carpeta” (acceder a la carpeta del proyecto)
+cd .. volver una carpeta atrás 
 ls (lista los archivos de una carpeta)
 git init (inicializa un repositorio de git)
 git add archivo.txt (pone el archivo en staged)
 git add --all (pone todos  los  archivos en estado staged)
 git status (muestra el estado de los archivos)
+git status -s (forma más simple de ver estados) 
 git commit (confirma archivos de staged a repositorio local)
 git commit -m “comentario” (comitea el archivo con un comentario explicativo)
 git log (muestra el historial de cambios con sus comentarios)
@@ -20,3 +25,7 @@ git remote add origin  https…..(agregar archivos al repositorio remoto en gith
 git remote -v (comprueba configuración de repositorio remoto)
 git push origin master (envía archivos comiteaddos  localmente a repositorio remoto)
 git pull origin master (trae cambios realizados por otra persona desde repositorio reemoto a  mi reposcioriolocal)
+git rm archivo1.txt elimina un archivo
+git restaure archivo1.rxt restaura cambios. 
+git mv archivo 1.txt archivo.txt ( mueve el nombre de un archivo a otro) 
+Para ignorar un archivo que no quiero que Git comitee nunca por razones de seguridad, crear un archivo llamado .gitignore en vscode y escribir dentro los datos como por ejemplo ( user: akakka, password: 12290) 
