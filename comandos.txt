@@ -13,19 +13,58 @@ clear (borra terminal)
 cd “nombre de la carpeta” (acceder a la carpeta del proyecto)
 cd .. volver una carpeta atrás 
 ls (lista los archivos de una carpeta)
+
 git init (inicializa un repositorio de git)
+
 git add archivo.txt (pone el archivo en staged)
 git add --all (pone todos  los  archivos en estado staged)
+
 git status (muestra el estado de los archivos)
 git status -s (forma más simple de ver estados) 
+
 git commit (confirma archivos de staged a repositorio local)
 git commit -m “comentario” (comitea el archivo con un comentario explicativo)
+
 git log (muestra el historial de cambios con sus comentarios)
+git log --oneline ( muestra historial general de cambios de forma más simple) 
+
+git diff ( muestra las diferencias realizadas en un archivo antes de agregarlo a staged) *para salir de la ventana git diff presionar "q"
+git diff --staged( muestra los cambios en etapa staged antes de ser comiteados) 
+
 git remote add origin  https…..(agregar archivos al repositorio remoto en github)
 git remote -v (comprueba configuración de repositorio remoto)
+
 git push origin master (envía archivos comiteaddos  localmente a repositorio remoto)
 git pull origin master (trae cambios realizados por otra persona desde repositorio reemoto a  mi reposcioriolocal)
+
 git rm archivo1.txt elimina un archivo
+
 git restaure archivo1.rxt restaura cambios. 
+
 git mv archivo 1.txt archivo.txt ( mueve el nombre de un archivo a otro) 
+
 Para ignorar un archivo que no quiero que Git comitee nunca por razones de seguridad, crear un archivo llamado .gitignore en vscode y escribir dentro los datos como por ejemplo ( user: akakka, password: 12290) 
+
+
+
+Hasta ahora, todo el flujo de trabajo es lineal en la rama principal ( main branch) Pero es importante a la hora de hacer hacer cambios o agregar una nueva funcionalidad al código, hacerlo en una nueva rama, para una vez terminanda las modificaciones, volver a la rama principal. 
+
+git branch ( verificar en qué rama estoy)
+
+git checkout -b ramab ( crear nueva rama llamada "ramab") 
+
+*A partir de que estoy en ramab puedo empezar a modificar archivos. La rama main permanece intacta. 
+
+cat archivo.txt muestra contenido de archivo. 
+
+Como empalmar ramab a rama main?
+
+git checkout main ( primero volver a rama main) 
+
+gir merge ramab ( eso enlaza la ramab a la rama main) 
+
+git push ( subir rama main al repositorio) 
+
+git checkout -b ramab
+
+git push -u origin ramab ( subir nueva rama al servidor de GitHub) 
