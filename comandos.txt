@@ -61,7 +61,7 @@ Como empalmar ramab a rama main?
 
 git checkout main ( primero volver a rama main) 
 
-gir merge ramab ( eso enlaza la ramab a la rama main) 
+git merge ramab ( eso enlaza la ramab a la rama main) 
 
 git push ( subir rama main al repositorio) 
 
